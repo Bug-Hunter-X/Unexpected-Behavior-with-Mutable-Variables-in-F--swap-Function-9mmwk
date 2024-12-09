@@ -1,0 +1,3 @@
+This example demonstrates a common issue when working with mutable variables in F#.  The `swap` function intends to exchange the values of `x` and `y`, but because mutable variables are passed by reference, the function modifies the original variables directly, rather than creating copies.
+
+The solution shows how to correctly swap the values by using a tuple to represent the pair of values. This approach works because tuples are passed by value.
